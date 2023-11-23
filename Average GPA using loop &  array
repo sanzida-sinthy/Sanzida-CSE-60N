@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float gpaArray[3] = {0};  // Initialize an array to store GPAs for subjects
+    float totalGPA = 0;
+
+    // Loop to input GPAs for each subject
+    for (int i = 0; i < 3; ++i) {
+        printf("Enter GPA for subject %d: ", i + 1);
+        scanf("%f", &gpaArray[i]);
+
+        totalGPA += gpaArray[i];
+    }
+
+    // Calculate average GPA
+    float averageGPA = totalGPA / 3;
+
+    // Display the array and average GPA
+    printf("GPA Array: [%.2f, %.2f, %.2f]\n", gpaArray[0], gpaArray[1], gpaArray[2]);
+    printf("Average GPA: %.2f\n", averageGPA);
+
+    }
