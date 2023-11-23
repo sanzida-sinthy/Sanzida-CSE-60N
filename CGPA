@@ -1,0 +1,20 @@
+#include<stdio.h>
+main()
+{
+    float a[20], sum=0; int i, n;
+
+    printf("Insert number of Course: "); // value of n
+    scanf("%d", &n); // value of the course
+
+    for (i=1; i<=n; i++)
+    {
+        printf("Enter the GPA of Course %d: ", i);
+        scanf("%f", &a[i]); //array value
+    }
+    for (i=1; i<=n; i++)
+    {
+        sum = sum + a[i]; // total value
+    }
+    printf("\nAverage CGPA is: %.2f", sum/(float)n); // avg result
+
+}
